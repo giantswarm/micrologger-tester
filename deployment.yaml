@@ -17,6 +17,5 @@ spec:
     spec:
       containers:
       - name: logger-test 
-        image: jgsqware/logger-test:1
-       
+        image: quay.io/giantswarm/micrologger-tester:latest
       restartPolicy: Always
