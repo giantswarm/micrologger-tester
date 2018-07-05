@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: logger-test
+  name: micrologger-tester
   namespace: testing
   labels:
-    app: logger-test
+    app: micromicrologger-testerer
 spec:
   replicas: 1
   revisionHistoryLimit: 3
@@ -13,9 +13,9 @@ spec:
   template:
     metadata:
       labels:
-        app: logger-test
+        app: micrologger-tester
     spec:
       containers:
-      - name: logger-test 
+      - name: micrologger-tester 
         image: quay.io/giantswarm/micrologger-tester:latest
       restartPolicy: Always
